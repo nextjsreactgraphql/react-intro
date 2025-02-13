@@ -1,0 +1,22 @@
+/*Wenn ihr lieber eigene CSS-Klassen schreiben wollt,*/
+/*koennt ihr den Inhalt dieser Datei loeschen*/
+/*und euren eigenen CSS-Code hier reinschreiben*/
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  h1 {
+    @apply text-2xl font-bold;
+  }
+  button {
+    @apply cursor-pointer rounded-lg border-2 px-2 py-1;
+  }
+  button:hover {
+    @apply bg-gray-200;
+  }
+  button:disabled {
+    @apply text-gray-300;
+  }
+}
