@@ -20,13 +20,18 @@ export default function ArticleCard({title, likes} : ArticleCardProps) {
 		return <h1>Artikel kaputt</h1>
 	}
 
-
+	function renderLikes() {
+		return `${likes} Likes`
+	}
 
 	return (
 		<article>
 			<h1 id={"title"} aria-hidden={true} className={myClassNames}>{title}</h1>
 			{/*<div>{likes} Likes</div>*/}
 			{likes === 0 ? <p>Leider keine Likes!</p> : <p>{likes} Likes</p>}
+			{likes > 25 && "Likes sind größer als 25"}
+			{likes > 25|| "Likes sind nicht größer 25" }
+			{renderLikes()}
 		</article>
 	)
 }
