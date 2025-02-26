@@ -1,6 +1,7 @@
 import ArticleCard from "./ArticleCard.tsx";
 import { Fragment } from "react";
 import ArticleList from "./ArticleList.tsx";
+import ArticleSlider from "./ArticleSlider.tsx";
 
 const article1 = {
   id: "1",
@@ -33,9 +34,12 @@ const article5 = {
 export default function App() {
   return (
     <>
-      <ArticleList articles={ [article1, article2, article3] } />
+      <h1>Mediathek</h1>
+      <ArticleSlider articles={[article1, article2, article3, article4, article5]} />
+      {/*<ArticleList articles={ [article1, article2, article3] } />*/}
       {/*<ArticleCard title={"Artikel 1"} likes={123} />*/}
       {/*<ArticleCard title={"Artikel 2"} likes={45} />*/}
+      <h2>(c) ARD</h2>
     </>
   );
 }
