@@ -35,8 +35,12 @@
   * Entferne dort den bestehenden `ArticleList`-Aufruf und render stattdessen den `ArticleSlider`
     * Was passiert wenn du den `ArticleSlider` mehrfach einbindest?
 * **Optional**, wenn wir noch Zeit haben, kannst du noch Verbesserungen machen
-  * Zum Beipiel den Button disablen, damit man nur klicken kann, wenn man im "gültigen" Bereich ist
   * Weitere Buttons hinzufügen, mit denen man direkt auf eine "Seite" springen kann
+  * Endloses Klicken: wenn man rechts angekommen ist, geht es von vorne los **oder** den Button disablen, damit man nur dann klicken kann, wenn man noch im "gültigen" Bereich ist
+  * In der App-Komponente kann man den Slider mit einem Button ein- und ausschalten. 
+  * Der Slider bekommt ein zusätzliches Property, mit dem eine Komponente von außen bestimmen kann, mit welchem Artikel begonnen wird
+  * Wenn man auf der letzten Seite angekommen ist, soll der Slider eine andere Hintergrundfarbe bekommen (dazu bitte eine entsprechende CSS-Klasse setzen, z.B. `bg-red-500`)
+  * 
 
 # Material
 
