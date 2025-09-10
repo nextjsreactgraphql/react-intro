@@ -17,6 +17,8 @@ export default function ArticleCard(props: ArticleCardProps) {
   // JSX
   // Properties
 
+  // const likes = loadLikes(...)
+
   const message = props.likes < 500 ?
     <div className={"gruen"}>Unter fünfhundert</div> :
     <div className={"rot"}>Über fünfhundert</div>;
