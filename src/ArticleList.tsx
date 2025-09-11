@@ -9,7 +9,7 @@ export default function ArticleList(props: ArticleListProps) {
 
   return <div className={"flex gap-x-4"}>
     {props.articles.map(a =>
-      <ArticleCard key={a.id} title={a.title} likes={a.likes} />)}
+      <ArticleCard name="..." key={a.id} title={a.title} likes={a.likes} />)}
   </div>
 
 }

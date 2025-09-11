@@ -9,6 +9,7 @@
 type ArticleCardProps = {
   title: string;
   likes: number;
+  name: string;
 
   // variante: "large" | "small"
 }
@@ -18,6 +19,8 @@ export default function ArticleCard(props: ArticleCardProps) {
   // Properties
 
   // const likes = loadLikes(...)
+
+  const x = props.name.toUpperCase();
 
   const message = props.likes < 500 ?
     <div className={"gruen"}>Unter fünfhundert</div> :
