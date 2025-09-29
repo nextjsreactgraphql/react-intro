@@ -7,6 +7,11 @@
 // }
 //   props
 
+interface IArticleCardProps {
+  title: string;
+  likes: number;
+}
+
 type ArticleCardProps = {
   title: string;
   likes: number;
