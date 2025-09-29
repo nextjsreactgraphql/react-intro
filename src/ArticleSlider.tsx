@@ -44,7 +44,8 @@ export default function ArticleSlider(props: ArticleSliderProps) {
     <button
       disabled={zurueckButtonDisabled}
       onClick={ handleZurueckClick  } >Zurück</button>
-    <ArticleList articles={visibleArticles} />
+    <ArticleList articles={visibleArticles}
+    imagePosition={"top"}/>
     <button
       onClick={ () => setVisibleArticleIndex(visibleArticleIndex +1) }>
       Vor</button>

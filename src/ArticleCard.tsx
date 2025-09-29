@@ -15,6 +15,8 @@ interface IArticleCardProps {
 type ArticleCardProps = {
   title: string;
   likes: number;
+
+  imagePosition?: "top" | "bottom"
 }
 
 // export default function ArticleCard({likes, title}: ArticleCardProps) {
@@ -36,9 +38,11 @@ export default function ArticleCard(props: ArticleCardProps) {
   const likesMessage = props.likes == 1 ? "1 Like" : `${props.likes} Likes`;
 
   return <article>
+    {props.imagePosition === "top" && <div>bild</div>}
     <h1 className={"text-2xl font-bold"}>{props.title === "" ? "Kein Titel" : props.title}</h1>
     {/*<input disabled={true} max={123} value={null} />*/}
     <div>{likesMessage}</div>
+    {props.imagePosition === "bottom" && <div>bild</div>}
   </article>
 
 
