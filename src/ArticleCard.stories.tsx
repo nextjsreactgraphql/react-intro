@@ -5,7 +5,7 @@ type ArticleCardMeta = Meta<typeof ArticleCard>;
 
 const meta: ArticleCardMeta = {
   tags: ["autodocs"],
-  title: "React-Komponenten / Article Card Komponente",
+  title: "React-Komponenten \u2215 Article Card Komponente",
   args: {
     title: "Beispiel Artikel",
   },
