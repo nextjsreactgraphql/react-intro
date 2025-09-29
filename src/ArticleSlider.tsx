@@ -14,14 +14,21 @@ export default function ArticleSlider(props: ArticleSliderProps) {
   // State
   const [visibleArticleIndex, setVisibleArticleIndex] = useState(0);  // Tuple
 
+  // useMemo <--
+  // useCallback
+  //    ^---------------- React Compiler
+
   // const state = useState(0);  // Tuple
   // const visibleArticleIndex = state[0]; // Aktueller Wert im State
   // const setVisibleArticleIndex = state[1]; // Setter-Funktion
 
+  // 1
   const visibleArticles = props.articles.slice(
     visibleArticleIndex,
     visibleArticleIndex + 3
   );
+
+  // const kompletteList = visibleArticles + props.articles.slice(0, 2)
 
   const zurueckButtonDisabled = visibleArticleIndex === 0;
 
