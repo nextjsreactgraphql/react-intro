@@ -1,6 +1,6 @@
 import { Article } from "./types.ts";
 import ArticleList from "./ArticleList.tsx";
-import { useState } from "react";
+import { useMemo, useState } from "react";
 
 type ArticleSliderProps = {
   articles: Article[]
@@ -23,10 +23,11 @@ export default function ArticleSlider(props: ArticleSliderProps) {
   // const setVisibleArticleIndex = state[1]; // Setter-Funktion
 
   // 1
-  const visibleArticles = props.articles.slice(
+  const visibleArticles = useMemo(
+    () =>  props.articles.slice(
     visibleArticleIndex,
     visibleArticleIndex + 3
-  );
+  ), [props.articles, visibleArticleIndex])
 
   // const kompletteList = visibleArticles + props.articles.slice(0, 2)
 
