@@ -7,6 +7,11 @@ type ArticleSliderProps = {
 }
 
 // "Virtual DOM"
+//  { elementName: "div",
+//  // children: [
+//       { elementName: "h1", children: "Hello WorlD" },
+//       { elementName: "ArticleList", children: [articles] }
+//  }
 export default function ArticleSlider(props: ArticleSliderProps) {
 
   console.log("Rendering ArticleSlider", new Date().toLocaleTimeString());
